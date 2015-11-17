@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <header class="navigation" role="banner">
+      <div class="navigation-wrapper">
+        <a href="/" class="logo">
+          <img src="http://dlab.berkeley.edu/sites/all/themes/planetta/logo.png" alt="Logo Image">
+        </a>
+        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+        <nav role="navigation">
+          <ul id="js-navigation-menu" class="navigation-menu show">
+            <li class="nav-link"><a href="/" class="blog-title">D-Lab Hacks</a></li>
+            <li class="nav-link"><a href="/about">About</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <article>
+        {{ content }}
+      </article>
+      <aside>
+        {% include info.html %}
+      </aside>
+    </main>
+  </body>
+</html>

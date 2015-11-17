@@ -1,0 +1,17 @@
+# Site settings
+title: D-Lab Tech Projects
+email: dlab@berkeley.edu
+description: "Data intensive social science for all."
+baseurl: ""
+url: "http://dlab-berkeley.github.io"
+twitter_username: DLabAtBerkeley
+github_username: dlab-berkeley
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# We explicitly link components to more sensible places
+exclude:
+ - bower_components
+ - bower.json
